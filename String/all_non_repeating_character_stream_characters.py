@@ -10,7 +10,6 @@ def all_non_repeating_character_stream_characters(str):
         elif count[ord(s)] == 1:
             dll.append(s)
 
-    print dll
+    return dll
 
-
-all_non_repeating_character_stream_characters('ogeekqusigefeksazndgeeksr')
+print all_non_repeating_character_stream_characters('ogeekqusigefeksazndgeeksr')
