@@ -31,18 +31,26 @@ var nextGreaterElements = function(nums) {
 
 	for(i=0;i<2 * nums.length - 1;i++){
 		stack.push((i)%nums.length);
+		console.log(stack);
 		while(stack.length && nums[stack[stack.length - 1]] < nums[(i + 1)%nums.length]){
 			nextGreaterElementsArray[(stack.pop())%nums.length] = nums[(i + 1)%nums.length];
 		}
 	}
-
 	return nextGreaterElementsArray;
 
 };
 
+var printLineWise = function(arr1, arr2){
+	for(var i=0;i<arr1.length;i++){
+		console.log(arr1[i] + ' --> ' + arr2[i]);
+	}
+};
+
 arr1 = [1,2, 1];
 arr2 = [5,4,3,2,1];
-arr3 = [5,4,6,2,1];
-console.log(nextGreaterElements(arr1));
-console.log(nextGreaterElements(arr2));
+arr3 = [2,5,1,6,8,7];
+// console.log(nextGreaterElements(arr1));
+// printLineWise(arr1, nextGreaterElements(arr1));
+//
+// console.log(nextGreaterElements(arr2));
 console.log(nextGreaterElements(arr3));
