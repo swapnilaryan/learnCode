@@ -14,5 +14,7 @@ def first_non_repeating_character_stream_characters(str):
             print "First non repeating character is " + inDLL[0]
         i += 1
 
+    print inDLL
+
 
 first_non_repeating_character_stream_characters('geeksforgeeksandgeeksquizfor')

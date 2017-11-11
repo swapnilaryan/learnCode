@@ -22,15 +22,15 @@ def inOrder(root):
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
-
-t=root.right
-t.right = Node(13)
-t.right.left = Node(7)
-root.left.left = Node(4)
-root.left.right = Node(5)
-
-t = root.left.right
-t.left = Node(9)
-t.right = Node(11)
+#
+# t=root.right
+# t.right = Node(13)
+# t.right.left = Node(7)
+# root.left.left = Node(4)
+# root.left.right = Node(5)
+#
+# t = root.left.right
+# t.left = Node(9)
+# t.right = Node(11)
 
 inOrder(root)

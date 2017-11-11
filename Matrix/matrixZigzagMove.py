@@ -1,6 +1,6 @@
 matrix = []
 result = []
-r = 1
+r = 3
 c = 3
 k = 0
 m = 0
